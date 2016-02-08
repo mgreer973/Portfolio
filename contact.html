@@ -7,46 +7,65 @@
    <title>Michael Greer</title>
    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-<!--   <script src="js/modernizr-2.0.js" type="text/javascript"></script> -->
-
-<!--<style type="text/css">
-
-}
-</style> -->
 
 </head>
 
 <body>
    
-  <!-- This is the beginning of the wrapping div. This div will nest all of the other page elements and have a fixed-width.-->
-  
-   <div class="wrap">
- 
-<!-- This is the beginning of the masthead div. Sometimes known as the "header", this div will contain the site logo and eventually other sections such as the secondary navigation .-->
+  	<header>				
+		<h1 class="hName">Michael Greer</h1>	
+		<nav>  
+    	<div class="cNav">  
+        	<a href="index.html">About  |</a> 
+        	<a href="portfolio.html">Portfolio  |</a>  
+ 			<a href="#">Contact</a>
+ 		</div>
+		</nav>		
+    </header>
 
-      <header id="masthead">				
-		<h1>Michael Greer</h1>				
-      </header>
+    <div class="wrap"> 
       
-<!-- End of Masthead Div-->
-
-<!-- This is the beginning of the main navigation div. We call this "mainnav" because it will serve as users primary method of navigation.-->
-      
-       <nav id="menu">    
+ <!--      <nav id="menu">    
            <ul>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a> | </li>
                 <li><a href="portfolio.html">Portfolio</a></li> 
-                <li><a href="index.html">About</a></li> 
+                <li><a href="#">About</a></li> 
            </ul>
-		</nav>
-          <!-- End of nav-->
-    <div id="innerwrapp">
+		</nav>  -->
+  
 
 	
-	<section id="contact">
-		<h3>Contact</h3>
+	<section>
+		<div class="contactSect">
+		<h1>Contact</h1>
+		<hr class="sepSection">
 
-		<form action="action_page.php">
+-		<form action="" action"" method="" class="contactForm"> 
+    
+    		<label>
+        		<span>Name</span>
+        		<input id="name" type="text" name="name" placeholder="John Smith" />
+    		</label>
+    
+    		<label>
+        		<span>Email</span>
+        		<input id="email" type="email" name="email" placeholder="example@gmail.com" />
+    		</label>
+    
+    		<label>
+        		<span>Message</span>
+        		<textarea id="message" name="message" ></textarea>
+    		</label> 
+
+     		<label>
+    		    <span>&nbsp;</span> 
+       			<input type="button" class="button" value="Submit" /> 
+    		</label>    
+		</form>
+		
+
+<!--		<form action="action_page.php" >
+
 			Name<br>
 			<input type="text" name="name" value="John Smith">
 			<br>
@@ -56,45 +75,37 @@
 			<textarea name="message" rows="10" cols="30">  </textarea>
 			<br><br>
 			<input type="submit" value="Submit">
-		</form> 
+		</form> -->
+
+		</div>
+
+
+
     </section>
 
-	<aside id="aside-index">
-	  <h2>Connect with Me</h2>
-		<a href="https://github.com/mgreer973" target="_blank"><img src="assets/images/1454463637_github_square_black.png" width="59" height="64"  alt="github">  </a>  
+	<aside class="aside-index">
+	  <h3>Connect with Me</h3>
+	  <hr class="sepAside">
+	    <div class="asideIcons">
+		<a href="https://github.com/mgreer973" target="_blank"><img src="assets/images/1454463637_github_square_black.png" width="61" height="63"  alt="github">  </a>  
 
-		<a href="https://www.linkedin.com/in/michaelgreernj" target="_blank"><img src="assets/images/1454455770_linkedin_square_color.png" width="59" height="64"  alt="linkedin">  </a>  
+		<a href="https://www.linkedin.com/in/michaelgreernj" target="_blank"><img src="assets/images/1454455770_linkedin_square_color.png" width="61" height="63"  alt="linkedin">  </a>  
 
-	    <a href="#" target="_blank"><img src="assets/images/1454455989_stackoverflow.png" width="59" height="64"  alt="stackOverflow">  </a>  
-
-		
-
-		   
-
+	    <a href="#" target="_blank"><img src="assets/images/1454455989_stackoverflow.png" width="61" height="63"  alt="stackOverflow">  </a>  
+        </div>
 	</aside > 
-
-		<div id="stuff">
 	
-	
-	</div>
+	  </div>    <!-- End of the Wrap Div-->
 
-	
-	</div> <!-- innerwrap -->
-
+<div class="bottomMargin"></div>
 		  
-<!-- This is the beginning of the  footer will live at the bottom of the page, although it is still nested within the -->
-      <footer id="siteinfo">
-        <p>© copyright 2016 Michael Greer</p>
-		
-		<div id="flogo">
-		</div>
-		
+<!-- This is the beginning of the  footer will live at the bottom of the page -->
+      <footer class="siteinfo">
+      <div class="footerP">
+        copyright 2016 Michael Greer
+       </div>
     </footer>
 	  <!-- End of Footer Div-->
-
-      
-   </div>
-   <!-- End of the Wrap Div-->
 
 </body>
 </html>
