@@ -1,105 +1,73 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-
-   <title>Michael Greer Portfolio</title>
-   <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
-   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-
-<!--<style type="text/css">
-
-}
-</style> -->
-
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio | Michael Greer</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
-   
-  	<header>				
-		<h1 class="hName">Michael Greer</h1>	
-		<nav>  
-    	<div class="cNav">  
-        	<a href="index.html">About  |</a> 
-        	<a href="#">Portfolio  |</a>  
- 			<a href="contact.html">Contact</a>
- 		</div>
-		</nav>		
-    </header>
 
-    <div class="wrap"> 
-      
- <!--      <nav id="menu">    
-           <ul>
-                <li><a href="contact.html">Contact</a> | </li>
-                <li><a href="portfolio.html">Portfolio</a></li> 
-                <li><a href="#">About</a></li> 
-           </ul>
-		</nav>  -->
-	
-
-	
-	<section>
-		<div class="port">
-		<h1>Portfolio</h1>
-		<hr class="sepSection">
-			
-			<figure class="portFigure">
-				<a href="#" target="_blank"><img src="assets/images/hangman.jpg" width="277" height="206"  alt="Hangman">  </a>
-			<figcaption>Hangman</figcaption>
-			</figure>
-			<!--<a href="#" target="_blank"><img src="assets/images/hangman.jpg" width="277" height="206"  alt="Hangman">  </a>  -->
-
-	      	<figure class="portFigure">
-				<a href="#" target="_blank"><img src="assets/images/rpgGame.jpg" width="277" height="206"  alt="RPG Name">  </a>
-			<figcaption>RPG Name</figcaption>
-			</figure>
-
-			<figure class="portFigure">	
-				<a href="#" target="_blank"><img src="assets/images/triviaGame.jpg" width="277" height="206"  alt="Trivia Game">  </a>  
-			<figcaption>Trivia Game</figcaption>
-			</figure>
-
-			<figure class="portFigure">	
-				<a href="#" target="_blank"><img src="assets/images/rutgersInfoWidget.jpg" width="277" height="206"  alt="Rutgers Info Widget">  </a>
-			<figcaption>Rutgers Info Widget</figcaption>
-			</figure>
-
-			<figure class="portFigure">	
-				<a href="#" target="_blank"><img src="assets/images/rockPaperScissors.jpg" width="277" height="206"  alt="Rock Paper Scissors">  </a>  
-			<figcaption>Rock Paper Scissors</figcaption>
-			</figure>
-
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Michael Greer</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
 		</div>
-    </section>
+	</header>
 
-	<aside class="aside-index">
-	  <h3>Connect with Me</h3>
-	  <hr class="sepAside">
-	    <div class="asideIcons">
-		<a href="https://github.com/mgreer973" target="_blank"><img src="assets/images/1454463637_github_square_black.png" width="61" height="63"  alt="github">  </a>  
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Portfolio</h1>
 
-		<a href="https://www.linkedin.com/in/michaelgreernj" target="_blank"><img src="assets/images/1454455770_linkedin_square_color.png" width="61" height="63"  alt="linkedin">  </a>  
+			<div class="work">
+				<img src="assets/images/hangman.jpg" alt="hangman">
 
-	    <a href="#" target="_blank"><img src="assets/images/1454455989_stackoverflow.png" width="61" height="63"  alt="stackOverflow">  </a>  
-        </div>
-	</aside > 
-	
-	  </div>    <!-- End of the Wrap Div-->
+				<h3>Hangman</h3>
+			</div>
+			<div class="work">
+				<img src="assets/images/rpgGame.jpg" alt="RPG Game">
 
-<div class="bottomMargin"></div>
-		  
-<!-- This is the beginning of the  footer will live at the bottom of the page -->
-      <footer class="siteinfo">
-      <div class="footerP">
-        copyright 2016 Michael Greer
-       </div>
-    </footer>
-	  <!-- End of Footer Div-->
+				<h3>RPG Game</h3>
+			</div>
+			<div class="work">
+				<img src="assets/images/triviaGame.jpg" alt="Trivia Game">
 
- 
-      
+				<h3>Trivia Game</h3>
+			</div>
+			<div class="work">
+				<img src="assets/images/rutgersInfoWidget.jpg" alt="Rutgers Info Widget">
 
+				<h3>Rutgers Info Widget</h3>
+			</div>
+			<div class="work">
+				<img src="assets/images/rockPaperScissors.jpg" alt="Rock Paper Scissors">
+
+				<h3>Rock Paper Scissors</h3>
+			</div>
+
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+
+				<img src="assets/images/github-128.png" class="social" alt="Github">
+				<img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn">
+				<img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow">
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Michael Greer
+		</div>
+	</footer>
 </body>
 </html>

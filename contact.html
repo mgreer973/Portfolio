@@ -1,111 +1,65 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-
-   <title>Michael Greer</title>
-   <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
-   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Michael Greer</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
-   
-  	<header>				
-		<h1 class="hName">Michael Greer</h1>	
-		<nav>  
-    	<div class="cNav">  
-        	<a href="index.html">About  |</a> 
-        	<a href="portfolio.html">Portfolio  |</a>  
- 			<a href="#">Contact</a>
- 		</div>
-		</nav>		
-    </header>
 
-    <div class="wrap"> 
-      
- <!--      <nav id="menu">    
-           <ul>
-                <li><a href="contact.html">Contact</a> | </li>
-                <li><a href="portfolio.html">Portfolio</a></li> 
-                <li><a href="#">About</a></li> 
-           </ul>
-		</nav>  -->
-  
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Michael Greer</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-	
-	<section>
-		<div class="contactSect">
-		<h1>Contact</h1>
-		<hr class="sepSection">
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
--		<form action="" action"" method="" class="contactForm"> 
-    
-    		<label>
-        		<span>Name</span>
-        		<input id="name" type="text" name="name" placeholder="John Smith" />
-    		</label>
-    
-    		<label>
-        		<span>Email</span>
-        		<input id="email" type="email" name="email" placeholder="example@gmail.com" />
-    		</label>
-    
-    		<label>
-        		<span>Message</span>
-        		<textarea id="message" name="message" ></textarea>
-    		</label> 
-
-     		<label>
-    		    <span>&nbsp;</span> 
-       			<input type="button" class="button" value="Submit" /> 
-    		</label>    
-		</form>
-		
-
-<!--		<form action="action_page.php" >
-
-			Name<br>
-			<input type="text" name="name" value="John Smith">
-			<br>
-			Email<br>
-			<input type="email" name="email" value="example@gmail.com">
-            <br>
-			<textarea name="message" rows="10" cols="30">  </textarea>
-			<br><br>
-			<input type="submit" value="Submit">
-		</form> -->
-
-		</div>
-
-
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
     </section>
 
-	<aside class="aside-index">
-	  <h3>Connect with Me</h3>
-	  <hr class="sepAside">
-	    <div class="asideIcons">
-		<a href="https://github.com/mgreer973" target="_blank"><img src="assets/images/1454463637_github_square_black.png" width="61" height="63"  alt="github">  </a>  
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-		<a href="https://www.linkedin.com/in/michaelgreernj" target="_blank"><img src="assets/images/1454455770_linkedin_square_color.png" width="61" height="63"  alt="linkedin">  </a>  
+        <img src="assets/images/github-128.png" class="social" alt="Github">
+        <img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn">
+        <img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow">
+      </div>
+    </section>
+  </div>
 
-	    <a href="#" target="_blank"><img src="assets/images/1454455989_stackoverflow.png" width="61" height="63"  alt="stackOverflow">  </a>  
-        </div>
-	</aside > 
-	
-	  </div>    <!-- End of the Wrap Div-->
-
-<div class="bottomMargin"></div>
-		  
-<!-- This is the beginning of the  footer will live at the bottom of the page -->
-      <footer class="siteinfo">
-      <div class="footerP">
-        copyright 2016 Michael Greer
-       </div>
-    </footer>
-	  <!-- End of Footer Div-->
-
+  <footer>
+    <div class="container">
+      &copy; Copyright 2016 Michael Greer
+    </div>
+  </footer>
 </body>
 </html>
